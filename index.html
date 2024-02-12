@@ -13,8 +13,7 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
-			font-family: 'Great Vibes', bold;
-			
+			font-family: 'Great Vibes', cursive;
         }
 
         button {
@@ -38,7 +37,7 @@
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
-            overflow: hidden; /* Hide overflowing stars */
+            overflow: hidden; /* Hide overflowing hearts */
             z-index: 1; /* Ensure modal is on top */
         }
 
@@ -51,33 +50,31 @@
             font-size: 24px;
         }
 
-        /* Star animation */
-        .star {
+        /* Heart animation */
+        .heart {
             display: inline-block;
-            animation: flyStar 5s linear infinite;
+            animation: flyHeart 5s linear infinite;
             font-size: 24px;
-            color: gold;
+            color: red;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
 
-        .star:nth-child(2) {
-            animation-duration: 4s; /* Make the second star move faster */
+        .heart:nth-child(2) {
+            animation-duration: 4s; /* Make the second heart move faster */
         }
 
-        .star:nth-child(3) {
-            animation-duration: 6s; /* Make the third star move slower */
+        .heart:nth-child(3) {
+            animation-duration: 6s; /* Make the third heart move slower */
         }
 
-        @keyframes flyStar {
+        @keyframes flyHeart {
             to {
                 transform: translateX(120vw) translateY(-120vh);
             }
         }
-		
-		
     </style>
 </head>
 <body>
@@ -87,11 +84,11 @@
 <!-- The Modal -->
 <div id="myModal" class="modal">
     <span class="close" onclick="closeModal()">&times;</span>
-    <p style="font-size: 40px;  color: red; font-style: verdana; ">HAPPY VALENTINE'S DAY!</p>
-    <!-- Flying Stars -->
-    <div class="star">✨</div>
-    <div class="star">✨</div>
-    <div class="star">✨</div>
+    <p style="font-size: 50px; color: red; ">HAPPY VALENTINE'S DAY!</p>
+    <!-- Flying Hearts -->
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
 </div>
 
 <script>
